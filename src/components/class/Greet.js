@@ -2,7 +2,8 @@ import React from "react";
 
 class GreetWithClass extends React.Component {
   render() {
-    return <h1>Greetings from class: {this.props.name}</h1>;
+    const { name } = this.props;
+    return <h1>Greetings from class: {name}</h1>;
   }
 }
 
