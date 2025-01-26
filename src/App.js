@@ -1,14 +1,14 @@
 import "./App.css";
+import ClassClick from "./components/Class/Events";
 import Counter from "./components/Counter";
-import Greet from "./components/function/Greet";
-import GreetWithClass from "./components/class/Greet";
+import FunctionClick from "./components/Function/Events";
 
 function App() {
   return (
     <div className="App">
-      <Greet name="Bruce" />
-      <GreetWithClass name="Clark" />
+      <FunctionClick />
       <Counter rank={1} />
+      <ClassClick />
     </div>
   );
 }
