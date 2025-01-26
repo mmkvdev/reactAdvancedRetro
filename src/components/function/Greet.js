@@ -1,11 +1,11 @@
 // creating a functional component
 
 function Greet(props) {
-  console.log({ props });
+  const { name, children } = props;
   return (
     <>
-      <h1>I'm {props.name}</h1>
-      {props.children}
+      <h1>I'm {name}</h1>
+      {children}
     </>
   );
 }
