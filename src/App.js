@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Greet from "./components/function/Greet";
+import { Greet2 } from "./components/function/Greet";
+import GreetWithClass from "./components/class/Greet";
+import GreetWithoutJSX from "./components/function/GreetWithoutJSX";
+import Welcome from "./components/class/Welcome";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Greet name="Bruce" key="king">
+        <h1>This is children prop from Bruce</h1>
+      </Greet>
+      <Greet name="Clark">
+        <button>This is the submit buttom from clark</button>
+      </Greet>
+      <Greet name="Diana">
+        <p>This is the paragraph from Diana</p>
+      </Greet>
+      <Greet2 />
+      <GreetWithClass name="Bruce" key="king" />
+      <GreetWithClass name="Clark" key="king" />
+      <GreetWithClass name="Diana" key="king" />
+      <GreetWithoutJSX name="Bruce" key="king" />
     </div>
   );
 }
