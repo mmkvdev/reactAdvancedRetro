@@ -38,10 +38,10 @@ export class Counter extends Component {
   }
   render() {
     return (
-      <>
+      <div style={{ margin: "50px" }}>
         <div>count: {this.state.count}</div>
         <button onClick={() => this.incrementFive()}>Increment</button>
-      </>
+      </div>
     );
   }
 }
