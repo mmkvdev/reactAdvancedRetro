@@ -1,10 +1,10 @@
 import "./App.css";
-import ClassMethodAsProps from "./components/Class/ClassMethodsAsProps";
+import ConditionalRendering from "./components/Class/ConditionalRendering";
 
 function App() {
   return (
     <div className="App">
-      <ClassMethodAsProps />
+      <ConditionalRendering />
     </div>
   );
 }
