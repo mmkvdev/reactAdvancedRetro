@@ -1,10 +1,10 @@
 import "./App.css";
-import EventBind from "./components/Class/Events/EventBind";
+import ClassMethodAsProps from "./components/Class/ClassMethodsAsProps";
 
 function App() {
   return (
     <div className="App">
-      <EventBind />
+      <ClassMethodAsProps />
     </div>
   );
 }
