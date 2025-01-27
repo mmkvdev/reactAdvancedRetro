@@ -16,7 +16,9 @@ export class NameList extends Component {
       },
     ];
 
-    const personList = persons.map((person) => <Person person={person} />);
+    const personList = persons.map((person) => (
+      <Person key={person.ide} person={person} />
+    ));
     return <>{personList}</>;
   }
 }
