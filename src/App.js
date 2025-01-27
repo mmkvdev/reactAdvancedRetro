@@ -1,14 +1,10 @@
 import "./App.css";
-import ClassClick from "./components/Class/Events";
-import Counter from "./components/Counter";
-import FunctionClick from "./components/Function/Events";
+import EventBind from "./components/Class/Events/EventBind";
 
 function App() {
   return (
     <div className="App">
-      <FunctionClick />
-      <Counter rank={1} />
-      <ClassClick />
+      <EventBind />
     </div>
   );
 }
