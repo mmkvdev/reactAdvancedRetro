@@ -1,10 +1,10 @@
 import "./App.css";
-import NameList from "./components/Class/NameList";
+import FunctionNameList from "./components/Function/FunctionNameList";
 
 function App() {
   return (
     <div className="App">
-      <NameList />
+      <FunctionNameList />
     </div>
   );
 }
