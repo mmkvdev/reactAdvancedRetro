@@ -1,10 +1,10 @@
 import "./App.css";
-import ConditionalRendering from "./components/Class/ConditionalRendering";
+import NameList from "./components/Class/NameList";
 
 function App() {
   return (
     <div className="App">
-      <ConditionalRendering />
+      <NameList />
     </div>
   );
 }
