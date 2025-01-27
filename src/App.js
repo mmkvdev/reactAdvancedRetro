@@ -1,10 +1,10 @@
-import "./App.css";
-import FunctionNameList from "./components/Function/FunctionNameList";
+import "./styles/App.css";
+import StyleSheet from "./components/Function/StyleSheet";
 
 function App() {
   return (
     <div className="App">
-      <FunctionNameList />
+      <StyleSheet primary />
     </div>
   );
 }
