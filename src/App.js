@@ -1,11 +1,10 @@
 import "./styles/App.css";
-import FragmentDemo from "./components/Class/FragmentDemo";
-import Table from "./components/Class/Table";
+import ParentComponent from "./components/Class/ParentComponent";
 
 function App() {
   return (
     <div className="App">
-      <Table />
+      <ParentComponent />
     </div>
   );
 }
