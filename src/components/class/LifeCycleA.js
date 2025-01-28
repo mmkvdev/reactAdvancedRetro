@@ -8,6 +8,8 @@ export class LifeCycleA extends Component {
     this.state = {
       name: "MMK",
     };
+
+    this.changeState = this.changeState.bind(this);
     console.log("Life cycle A constructor");
   }
 
@@ -20,11 +22,31 @@ export class LifeCycleA extends Component {
     console.log("Life cycle A componentDidMount");
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log("Life cycle A shouldComponentUpdate");
+    return true;
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log("Life cycle A getSnapshotBeforeUpdate");
+    return null;
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log("Life cycle A componentDidUpdate");
+  }
+
+  changeState() {
+    this.setState({
+      name: "Varma",
+    });
+  }
   render() {
     console.log("Life cycle A rendered");
     return (
       <>
-        <div>Life Cycle A Method</div>
+        <div>Life Cycle A Method: {this.state.name}</div>
+        <button onClick={this.changeState}>Change State!</button>
         <LifeCycleB />
       </>
     );
