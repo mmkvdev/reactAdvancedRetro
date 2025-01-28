@@ -19,6 +19,20 @@ export class LifeCycleB extends Component {
     console.log("Life cycle B componentDidMount");
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log("Life cycle B shouldComponentUpdate");
+    return true;
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log("Life cycle B getSnapshotBeforeUpdate");
+    return null;
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log("Life cycle B componentDidUpdate");
+  }
+
   render() {
     console.log("Life cycle B rendered");
     return <div>Life Cycle B Method</div>;
