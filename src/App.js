@@ -1,10 +1,10 @@
-import RefComponent from "./components/Class/RefComponent";
+import ForwardRefParent from "./components/Class/ForwardRefParent";
 import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <RefComponent />
+      <ForwardRefParent />
     </div>
   );
 }
