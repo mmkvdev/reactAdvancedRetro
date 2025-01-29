@@ -6,7 +6,11 @@ function Hero({ heroName }) {
   }
 
   const clickHandler = () => {
-    throw new Error("click handler");
+    try {
+      throw new Error("click handler");
+    } catch (err) {
+      console.log("click handler error: ", err);
+    }
   };
 
   return (
