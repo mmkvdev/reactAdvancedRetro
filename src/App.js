@@ -1,10 +1,10 @@
-import ForwardRefParent from "./components/Class/ForwardRefParent";
+import PortalsParent from "./components/Function/PortalsParent";
 import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <ForwardRefParent />
+      <PortalsParent />
     </div>
   );
 }
