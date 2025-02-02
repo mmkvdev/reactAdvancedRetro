@@ -1,12 +1,10 @@
-import IntervalClassCounter from "./components/Class/Effects/IntervalClassCounter";
-import IntervalHookCounter from "./components/Function/Counter/IntervalHookCounter";
+import FetchData from "./components/Function/Effects/FetchData";
 import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <IntervalClassCounter />
-      <IntervalHookCounter />
+      <FetchData />
     </div>
   );
 }
