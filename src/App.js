@@ -1,10 +1,10 @@
-import Mouse from "./components/Function/Effects/Mouse";
+import MouseContainer from "./components/Function/Effects/MouseContainer";
 import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <Mouse />
+      <MouseContainer />
     </div>
   );
 }
