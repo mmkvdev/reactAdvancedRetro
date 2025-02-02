@@ -1,10 +1,12 @@
-import MouseContainer from "./components/Function/Effects/MouseContainer";
+import IntervalClassCounter from "./components/Class/Effects/IntervalClassCounter";
+import IntervalHookCounter from "./components/Function/Counter/IntervalHookCounter";
 import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <MouseContainer />
+      <IntervalClassCounter />
+      <IntervalHookCounter />
     </div>
   );
 }
