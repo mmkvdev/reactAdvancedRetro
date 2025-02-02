@@ -1,10 +1,10 @@
-import Count from "./components/Function/Effects/Count";
+import Mouse from "./components/Function/Effects/Mouse";
 import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <Count />
+      <Mouse />
     </div>
   );
 }
