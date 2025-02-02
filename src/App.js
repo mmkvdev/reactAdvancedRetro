@@ -1,10 +1,11 @@
 import CounterCRUD from "./components/Function/Counter/CounterCRUD";
+import HookCounter3 from "./components/Function/Counter/HookCounter3";
 import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <CounterCRUD />
+      <HookCounter3 />
     </div>
   );
 }
