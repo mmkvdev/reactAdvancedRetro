@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/App.css";
-import Counter from "./components/Function/Reducer/Counter";
+import ComplexCounter from "./components/Function/Reducer/ComplexCounter";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -8,7 +8,7 @@ export const ChannelContext = React.createContext();
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <ComplexCounter />
     </div>
   );
 }
